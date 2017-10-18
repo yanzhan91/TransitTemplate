@@ -1,0 +1,74 @@
+welcome: |
+  <speak>
+    Welcome to {{TODO project name}}. This skill is built to provide you with real-time transit departures.
+    <break time="250ms"/>
+    If you need more information, please check the alexa app for the {{TODO project name}} skills page.
+    To begin, you can say this as an example.
+    <break time="250ms"/>
+    Check bus 1 at stop
+    <say-as interpret-as="digits">490</say-as>.
+    <break time="250ms"/>
+    For more commands, simply say help.
+  </speak>
+
+help: |
+  <speak>
+    I have sent a list of available commands for you in your alexa app. As an example, you can say, check bus 1 at stop
+    <say-as interpret-as="digits">490</say-as>.
+  </speak>
+
+help_card: |
+  Here are some examples you might like to try:
+  "Check bus 1 at stop 490" {{TODO change bus_id and stop_id}}
+  "Add bus to preset"
+  "Get my bus for preset 1"
+  For a list of bus IDs and stop IDs, check out the {{TODO project name}} website. Please leave a review for suggestions and feedbacks.
+
+bus_minutes_message: |
+  <speak>
+    The next number {{bus_id}} bus at stop
+    <say-as interpret-as="digits">{{stop_id}}</say-as>
+    <break time="100ms"/>
+    {{stop_name}}
+    <break time="300ms"/>
+    is {{minutes}}.
+  </speak>
+
+no_bus_message: |
+  <speak>
+    There are currently no number {{bus_id}} bus at stop
+    <say-as interpret-as="digits">{{stop_id}}</say-as>
+    <break time="100ms"/>
+    {{stop_name}}
+  </speak>
+
+set_bus_success_message: |
+  <speak>
+    Bus number {{bus_id}} at stop
+    <say-as interpret-as="digits">{{stop_id}}</say-as>
+    is saved at preset {{preset}}.
+  </speak>
+
+try_again_message: I didn't get that. Please say that again.
+
+internal_error_message: An internal error has occured. Please try again later.
+
+preset_not_found_message: Preset {{preset}} has not yet been saved.
+
+bus-question: For which bus?
+
+bus-question-reprompt: For a list of bus IDs, say help.
+
+stop-question: Which stop?
+
+stop-question-reprompt: For a list of stop IDs, say help.
+
+preset-question: Which preset?
+
+preset-question-reprompt: Which preset would you like?
+
+### Webhook ###
+
+missing_required_values: I did not hear the bus_id or stop_id. Please try again.
+
+

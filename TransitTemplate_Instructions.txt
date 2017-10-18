@@ -1,0 +1,19 @@
+# TransitTemplate
+
+## Setup
+
+### Fix all TODOs from the following files
+requirement.txt
+templates.yaml
+CheckBusIntent.py
+zappa_settings.json
+
+### Install requirements in virtualenv (venv/)
+source venv/bin/activate
+pip install -r requirement.txt
+
+## Deploy
+
+source venv/bin/activate
+zappa deploy dev (first time only)
+zappa update dev (non first time)

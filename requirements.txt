@@ -1,0 +1,6 @@
+Flask==0.12.1
+Flask-Ask==0.9.7
+zappa==0.43.2
+boto3==1.4.7
+
+# TODO Add additional depedencies here
