@@ -3,7 +3,13 @@
 ## Setup
 
 ### Renaming
-.gitignore_template to .gitnore
+Add these to gitignore:
+    venv/
+    main.py
+    GetBusIntent.py
+    SetBusIntent.py
+    IntentSchema.json
+    SampleUtterance.txt
 
 ### Fix all TODOs from the following files
 requirement.txt
