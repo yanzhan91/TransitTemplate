@@ -2,6 +2,9 @@
 
 ## Setup
 
+### Renaming
+.gitignore_template to .gitnore
+
 ### Fix all TODOs from the following files
 requirement.txt
 templates.yaml
