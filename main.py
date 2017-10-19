@@ -93,7 +93,7 @@ def answer_intent(num):
         return statement(render_template('try_again_message'))
 
     if 'request' not in session.attributes:
-       return get_bus_intent('1')
+        return get_bus_intent('1')
     current_param = session.attributes['current_param']
     if session.attributes['request'] == 'check_bus':
         return check_bus_intent(assign_params(current_param, 0, num), assign_params(current_param, 1, num))
