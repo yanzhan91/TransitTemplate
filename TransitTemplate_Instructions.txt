@@ -2,6 +2,16 @@
 
 ## Setup
 
+### Repository
+Create new github repo
+git clone https://github.com/yanzhan91/TransitTemplate.git {project_name}
+cd {project_name}
+git remote remove origin
+git remote add origin {new github repo url}
+git remote add parent https://github.com/yanzhan91/TransitTemplate.git
+git remote set-url --push parent DISABLE
+git push -u origin master
+
 ### Renaming
 Add these to gitignore:
     venv/
