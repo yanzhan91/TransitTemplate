@@ -5,23 +5,23 @@ welcome: |
     If you need more information, please check the alexa app for the {{TODO project name}} skills page.
     To begin, you can say this as an example.
     <break time="250ms"/>
-    Check bus 1 at stop
-    <say-as interpret-as="digits">490</say-as>.
+    Check bus {{TODO bus_id}} at stop
+    <say-as interpret-as="digits">{{TODO stop_id}}</say-as>.
     <break time="250ms"/>
     For more commands, simply say help.
   </speak>
 
 help: |
   <speak>
-    I have sent a list of available commands for you in your alexa app. As an example, you can say, check bus 1 at stop
-    <say-as interpret-as="digits">490</say-as>.
+    I have sent a list of available commands for you in your alexa app. As an example, you can say, check bus {{TODO bus_id}} at stop
+    <say-as interpret-as="digits">{{TODO stop_id}}</say-as>.
   </speak>
 
 help_card: |
   Here are some examples you might like to try:
-  "Check bus 1 at stop 490" {{TODO change bus_id and stop_id}}
-  "Add bus to preset"
-  "Get my bus for preset 1"
+  "Check my bus"
+  "Set my bus"
+  "Get my bus"
   For a list of bus IDs and stop IDs, check out the {{TODO project name}} website. Please leave a review for suggestions and feedbacks.
 
 bus_minutes_message: |
